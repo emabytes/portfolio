@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+/* 
+@font-face {
+  font-family: Banny-Regular;
+  src: url(../fonts/Banny-Round.otf);
+}
+@font-face {
+  font-family: Banny-Light;
+  src: url(../fonts/Banny-LightRound.otf);
+}
+@font-face {
+  font-family: Banny-Bold;
+  src: url(../fonts/Banny-BoldRound.otf);
+} */
 
 html {
   scroll-behavior: smooth;
@@ -14,13 +26,13 @@ body {
 }
 .nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  width: 100%;
   padding: 15px 0;
-  padding-left: 5%;
   position: absolute;
-  top: 70vh;
-  right: 5%;
+  /*  top: 70vh;
+  right: 5%; */
 }
 .nav li {
   padding-bottom: 4vh;
@@ -28,10 +40,9 @@ body {
 header ul li a {
   font-size: 1em;
   letter-spacing: 3px;
-  text-transform: uppercase;
   transition: all 0.5s ease;
   list-style-type: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding-bottom: 2px;
   color: white;
   position: relative;
@@ -53,6 +64,25 @@ header ul li a:hover::after {
 }
 header ul li a:hover {
   color: rgb(240, 190, 81);
+}
+.social-wrap {
+  position: absolute;
+  top: 45vh;
+  right: 2%;
+  writing-mode: vertical-lr;
+}
+.social-wrap i {
+  transition: all 0.5s ease;
+  color: white;
+  padding: 0.1em 0;
+}
+.social-wrap i:hover {
+  transform: scale(0.8);
+  color: rgb(240, 190, 81);
+}
+.social-wrap a {
+  text-decoration: none;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -90,23 +120,24 @@ main {
 #about h1 {
   font-size: 7em;
   padding-bottom: 2vh;
-  text-transform: uppercase;
- color:rgba(245, 245, 245, 0.1);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+  /* text-transform: uppercase; */
+  color: rgba(245, 245, 245, 0.3);
+  /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white; */
 }
 
 #about h2 {
   font-size: 5em;
   padding-bottom: 2vh;
   color: rgb(240, 190, 81);
-  font-family: 'Mrs Saint Delafield', cursive;
+  font-family: "Mrs Saint Delafield", cursive;
 }
 #about h3 {
   font-size: 1.2em;
   font-weight: 400;
   padding-bottom: 10vh;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  color: rgba(245, 245, 245, 0.5);
 }
 .icon-wrap {
   position: relative;
@@ -282,16 +313,16 @@ form p {
 footer {
   padding: 3vh 3%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 footer h1 {
   font-size: 2em;
   align-self: center;
 }
 footer div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 footer i {
   color: rgb(240, 190, 81);
@@ -305,10 +336,10 @@ footer h1 {
   animation: beat 2s infinite linear;
 }
 footer h2 {
-    font-size: 1em;
-    font-weight: 400;
-    justify-self: end;
-    align-self: center;
+  font-size: 1em;
+  font-weight: 400;
+  justify-self: end;
+  align-self: center;
 }
 @keyframes beat {
   0%,
@@ -319,3 +350,6 @@ footer h2 {
     transform: scale(0.8);
   }
 }
+
+/* hamburger menu */
+/* @media (min-width:768px) and (max-width:1024px) {} */
