@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/3b1c75d67e.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" href="assets/img/e.png">
 </head>
 
 <body>
     <header id="about" class="nav-wrap">
-        <!-- <a class="logo" href="#about">EM</a> -->
+        <a class="logo" href="#">
+            <img src="assets/img/retro-logo.png" alt="">
+        </a>
         <div class="social-wrap">
             <a href=""><i class="fab fa-github"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
@@ -25,13 +25,13 @@
 
         <ul class="nav" id="navi">
             <li>
-                <a href="#about">About</a>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="assets/html/about.html">About</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#contact-footer">Contact</a>
@@ -45,7 +45,7 @@
             <h2 class="neon">I'm Emilija</h2>
             <h3>a web developer</h3>
             <div class="icon-wrap">
-                <a href="#projects"><i class="fas fa-angle-down scroll-icon"></i></a>
+                <a href="#projects"><i class="fas fa-chevron-down scroll-icon"></i></a>
             </div>
         </section>
     </main>
@@ -54,8 +54,28 @@
         <h1>My Projects</h1>
         <article>
             <div class="project-wrap">
-                <img src="assets/img/headphones-1.png" alt="">
-
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img src="assets/img/headphones-1.png" alt="">
+                </div>
                 <div class="btn-wrap">
                     <a class="btn" href="https://emabytes.github.io/project-headphones/">Website</a>
                     <a class="btn" href="https://github.com/emabytes/project-headphones">Code</a>
@@ -63,61 +83,146 @@
             </div>
 
             <div class="project-wrap">
-                <img src="assets/img/california.png" alt="">
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img class="project-img" src="assets/img/california.png" alt="">
+                </div>
                 <div class="btn-wrap">
-                    <a href="https://emabytes.github.io/california-calling-project/">Website</a>
-                    <a href="https://github.com/emabytes/california-calling-project">Code</a>
+                    <a class="btn" href="https://emabytes.github.io/california-calling-project/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/california-calling-project">Code</a>
                 </div>
             </div>
-            <div class="project-wrap">
-                <img src="assets/img/design-shop.png" alt="">
-                <div class="btn-wrap">
 
-                    <a href="https://emabytes.github.io/the-design-shop-project/">Website</a>
-                    <a href="https://github.com/emabytes/the-design-shop-project">Code</a>
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img class="project-img" src="assets/img/design-shop.png" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a class="btn" href="https://emabytes.github.io/the-design-shop-project/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/the-design-shop-project">Code</a>
                 </div>
             </div>
+
             <div class="project-wrap">
-                <img src="assets/img/designer-project.png" alt="">
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img src="assets/img/designer-project.png" alt="">
+                </div>
                 <div class="btn-wrap">
-                    <a href="https://emabytes.github.io/The_Design_Project/">Website</a>
-                    <a href="https://github.com/emabytes/The_Design_Project">Code</a>
+                    <a class="btn" href="https://emabytes.github.io/The_Design_Project/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/The_Design_Project">Code</a>
                 </div>
             </div>
+
             <div class="project-wrap">
-                <img src="assets/img/roma-project.png" alt="">
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img class="project-img tile" src="assets/img/roma-project.png" alt="">
+                </div>
                 <div class="btn-wrap">
-                    <a href="https://emabytes.github.io/Roma-project/">Website</a>
-                    <a href="https://github.com/emabytes/Roma-project">Code</a>
+                    <a class="btn" href="https://emabytes.github.io/Roma-project/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/Roma-project">Code</a>
                 </div>
             </div>
+
             <div class="project-wrap">
-                <img src="assets/img/croatia-project.png" alt="">
+                <div class="tile">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
+                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
+                            explicabo
+                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <img class="project-img" src="assets/img/croatia-project.png" alt="">
+                </div>
                 <div class="btn-wrap">
-                    <a href="https://emabytes.github.io/croatia-landing-page/">Website</a>
-                    <a href="https://github.com/emabytes/croatia-landing-page">Code</a>
+                    <a class="btn" href="https://emabytes.github.io/croatia-landing-page/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/croatia-landing-page">Code</a>
                 </div>
             </div>
         </article>
-
-        <a class="more" href="assets/html/projects.html">Click for more projects</a>
-
-
-    </section>
-
-    <section id="skills">
-        <h1>My Skills</h1>
-        <div class="skills-wrap">
-            <div class="zoom">
-                <h2>HTML <i class="fab fa-html5"></i></h2>
-            </div>
-            <div class="zoom">
-                <h2>CSS <i class="fab fa-css3"></i></h2>
-            </div>
-            <div class="zoom">
-                <h2>JavaScript <i class="fab fa-js-square"></i></h2>
-            </div>
-        </div>
+        <a class="more" href="assets/html/projects.html">Click for more <span>projects</span></a>
     </section>
 
     <!-- <section id="contact" class="form-wrap">
@@ -138,11 +243,9 @@
     </section> -->
 
     <footer id="contact-footer">
-
         <div>
-            <h1>Let's connect!</h1>
+            <h1 class="neon">Let's connect!</h1>
         </div>
-
         <div>
             <a href="#"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
