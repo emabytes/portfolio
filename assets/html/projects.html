@@ -8,52 +8,208 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b1c75d67e.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../img/e.png">
 </head>
 
 <body>
-    <header id="about" class="nav-wrap">
-        <a class="logo absolute" href="../../index.html">
+    <header>
+        <a class="logo" href="../../index.html">
             <img src="../img/retro-logo.png" alt="">
         </a>
-        <ul class="nav" id="navi">
-            <li>
-                <a href="../../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../html/about.html">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="../../index.html#contact-footer">Contact</a>
-            </li>
-        </ul>
+
+        <button class="hamburger"></button>
+
+        <nav class="navbar">
+            <ul class="nav">
+                <li>
+                    <a class="navlink" href="../../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="navlink" href="../html/about.html">About</a>
+                </li>
+                <li>
+                    <a class="navlink" href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a class="navlink" href="projects.html#contact-footer">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section id="all-projects">
         <h1>My Projects</h1>
         <article>
+
             <div class="project-wrap">
                 <!-- overlay text on hover -->
                 <div class="tile">
                     <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <p>Movies Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>EJS</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>API</li>
+                        </ul>
+                    </div>
+                    <img src="../img/movie-magic.png" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://arcane-eyrie-04036.herokuapp.com/">Website</a>
+                    <a target="_blank" class="btn"
+                        href="https://github.com/emabytes/movie-magic-project-mongoose-api">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Cocktails Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>API</li>
+                            <li>Figma</li>
+                            <li>Responsive</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </div>
+                    <img src="../img/forty.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://compassionate-easley-f8c126.netlify.app/">Website</a>
+                    <a target="_blank" class="btn" href="https://github.com/YuhoHarada/projekt_FORTY">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Restaurant Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Express.js</li>
+                            <li>EJS</li>
+                        </ul>
+                    </div>
+                    <img src="../img/restaurant-project.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://guarded-springs-02958.herokuapp.com/">Website</a>
+                    <a target="_blank" class="btn"
+                        href="https://github.com/emabytes/expressjs-ejs-restaurant-project/">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>FundPot - 3 day Hackaton project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>EJS</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Figma</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </div>
+                    <img src="../img/fundpot.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://fundpot.herokuapp.com/">Website</a>
+                    <a target="_blank" class="btn" href="https://github.com/emabytes/FundPot-Project">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>Basic Agency - responsive website clone</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Responsive</li>
+                        </ul>
+                    </div>
+                    <img class="project-img" src="../img/project-a2.png" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://emabytes.github.io/Project-Basic_Agency/">Website</a>
+                    <a target="_blank" class="btn" href="https://github.com/emabytes/Project-Basic_Agency">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Portfolio Page - horizontal scroll </p>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
                         </ul>
-                        <!-- <ul>
-                            <li>
-                                <i class="fab fa-html5"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-css3-alt"></i>
-                            </li>
-                        </ul> -->
+                    </div>
+                    <img src="../img/jessica-portfolio.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn"
+                        href="https://emabytes.github.io/portfolio-horizontal-scroll//">Website</a>
+                    <a target="_blank" class="btn"
+                        href="https://github.com/emabytes/portfolio-horizontal-scroll">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Blog Template Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>EJS</li>
+                            <li>Express.js</li>
+                        </ul>
+                    </div>
+                    <img src="../img/blog-template.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://intense-scrubland-33659.herokuapp.com/">Website</a>
+                    <a target="_blank" class="btn"
+                        href="https://github.com/emabytes/blog-template-project-express-ejs">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <!-- overlay text on hover -->
+                <div class="tile">
+                    <div class="content">
+                        <p>Headphones Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
                     </div>
                     <img src="../img/headphones-1.png" alt="">
                 </div>
@@ -66,10 +222,36 @@
             <div class="project-wrap">
                 <div class="tile">
                     <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <p>
+                            Design Shop Project -
+                            I have also built a desktop version of this shop using MongoDB and Mongoose. Check it
+                            out
+                            here:
+                        <div class="extra-links">
+                            <a target="_blank" class="btn" href="https://hidden-falls-20834.herokuapp.com/">Website</a>
+                            <a target="_blank" class="btn"
+                                href="https://github.com/emabytes/the-design-shop-mongodb">Code</a>
+                        </div>
+                        </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Responsive</li>
+                        </ul>
+                    </div>
+                    <img class="project-img" src="../img/design-shop.png" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn"
+                        href="https://emabytes.github.io/the-design-shop-project/">Website</a>
+                    <a target="_blank" class="btn" href="https://github.com/emabytes/the-design-shop-project">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>California Calling Project</p>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -86,50 +268,7 @@
             <div class="project-wrap">
                 <div class="tile">
                     <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <img class="project-img" src="../img/design-shop.png" alt="">
-                </div>
-                <div class="btn-wrap">
-                    <a class="btn" href="https://emabytes.github.io/the-design-shop-project/">Website</a>
-                    <a class="btn" href="https://github.com/emabytes/the-design-shop-project">Code</a>
-                </div>
-            </div>
-
-            <div class="project-wrap">
-                <div class="tile">
-                    <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <img src="../img/designer-project.png" alt="">
-                </div>
-                <div class="btn-wrap">
-                    <a class="btn" href="https://emabytes.github.io/The_Design_Project/">Website</a>
-                    <a class="btn" href="https://github.com/emabytes/The_Design_Project">Code</a>
-                </div>
-            </div>
-
-            <div class="project-wrap">
-                <div class="tile">
-                    <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <p>Roma Project - parallax scrolling effect</p>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -146,13 +285,47 @@
             <div class="project-wrap">
                 <div class="tile">
                     <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nihil quis adipisci ea.
-                            Provident, quia. Sapiente, quae? Soluta omnis ipsam harum exercitationem iusto earum
-                            explicabo
-                            laborum? Ut iusto perspiciatis laudantium.</p>
+                        <p>100DaysOfGuitar landing page project</p>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>Design</li>
+                        </ul>
+                    </div>
+                    <img class="project-img tile" src="../img/guitar.jpg" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a target="_blank" class="btn" href="https://emabytes.github.io/100DaysOfGuitar/">Website</a>
+                    <a target="_blank" class="btn" href="https://github.com/emabytes/100DaysOfGuitar">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>Income tax calculator project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <img class="project-img" src="../img/einkommen1.JPG" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a class="btn" href="https://emabytes.github.io/Einkommensteuer-Rechner/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/Einkommensteuer-Rechner">Code</a>
+                </div>
+            </div>
+
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>Croatia landing page project made in 6 hours - idea, design, code</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Design</li>
                         </ul>
                     </div>
                     <img class="project-img" src="../img/croatia-project.png" alt="">
@@ -162,8 +335,46 @@
                     <a class="btn" href="https://github.com/emabytes/croatia-landing-page">Code</a>
                 </div>
             </div>
+
+            <div class="project-wrap">
+                <div class="tile">
+                    <div class="content">
+                        <p>The Design Project</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <img src="../img/designer-project.png" alt="">
+                </div>
+                <div class="btn-wrap">
+                    <a class="btn" href="https://emabytes.github.io/The_Design_Project/">Website</a>
+                    <a class="btn" href="https://github.com/emabytes/The_Design_Project">Code</a>
+                </div>
+            </div>
+
         </article>
+        <a class="more" href="https://github.com/emabytes">Check out more on GitHub</a>
     </section>
+
+    <footer id="contact-footer">
+        <div>
+            <h1 class="neon">Let's connect!</h1>
+        </div>
+        <div>
+            <a target="_blank" href="https://github.com/emabytes"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://twitter.com/emabytes"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ems/"><i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://www.xing.com/profile/Emilija_Sekulic/cv"><i class="fab fa-xing"></i>
+            </a>
+            <a target="_blank" href="mailto:emsekulic@gmail.com"><i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <h2>Made by <span>emabytes</span></h2>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

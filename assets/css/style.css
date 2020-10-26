@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600;700&display=swap");
-
-@import "./node_modules/sal.js/dist/sal.css";
 
 html {
   scroll-behavior: smooth;
@@ -29,50 +26,42 @@ body {
   }
 }
 .nav {
+  margin: 1.5em 0;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   width: 50%;
-  padding-top: 1em;
   position: absolute;
   right: 0;
+  height: 10vh;
 }
-.nav li {
-  padding-bottom: 4vh;
+header button {
+  display: none;
 }
 header ul li a {
   font-size: 1.2em;
   letter-spacing: 3px;
   transition: all 0.5s ease;
   list-style-type: none;
-  text-transform: lowercase;
   padding-bottom: 2px;
   color: white;
   position: relative;
 }
-/* header ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 250ms ease-in;
-}
-header ul li a:hover::after {
-  transform: scaleX(1);
-} */
 header ul li a:hover {
   color: #85c1e9;
   text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #0073e6, 0 0 8px #0073e6,
     0 0 10px #0073e6, 0 0 12px #0073e6, 0 0 14px #0073e6;
 }
+.logo {
+  padding: 1em 2%;
+  position: fixed;
+  z-index: 999;
+}
+.logo img {
+  height: 4em;
+}
 .social-wrap {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   right: 2%;
   writing-mode: vertical-lr;
 }
@@ -97,20 +86,6 @@ a {
 li {
   list-style-type: none;
 }
-.logo {
-  color: white;
-  width: 50px;
-  height: 4vh;
-  font-size: 1em;
-  font-weight: 600;
-  padding-left: 2%;
-  padding-top: 1em;
-  position: fixed;
-  z-index: 999;
-}
-.logo img {
-  height: 4em;
-}
 main {
   height: 100vh;
   background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
@@ -131,8 +106,8 @@ main {
   cursor: default;
 }
 #about h2 {
+  margin-top: -1em;
   font-size: 5em;
-  padding-bottom: 2vh;
   font-family: "Bungee Hairline", cursive;
   font-weight: 100;
   cursor: default;
@@ -140,8 +115,8 @@ main {
 .neon {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-  animation: blink 2s linear infinite;
-  transition: text-shadow;
+  /* animation: blink 2s linear infinite;
+  transition: text-shadow; */
 }
 @keyframes blink {
   50% {
@@ -153,6 +128,7 @@ main {
   padding-bottom: 10vh;
   color: white;
   cursor: default;
+  margin-top: -1.5em;
 }
 .icon-wrap {
   position: relative;
@@ -166,6 +142,7 @@ main {
   animation-iteration-count: infinite;
   color: #85c1e9;
   padding: 40px 0;
+  right: 48%;
 }
 @keyframes top-bottom-animation {
   0% {
@@ -181,14 +158,15 @@ main {
     opacity: 0.1;
   }
 }
-#projects {
-  padding-top: 3vh;
-  padding-bottom: 10vh;
+#projects,
+#all-projects {
+  padding: 3vh 2% 10vh 2%;
   text-align: center;
 }
 #projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 #projects h1 {
   font-size: 3.5em;
@@ -204,8 +182,8 @@ main {
 #all-projects .btn {
   font-family: "Source Code Pro", monospace;
   font-size: 1em;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-transform: capitalize;
   color: rgba(255, 255, 255, 0.75);
   position: relative;
   margin: 10px;
@@ -227,14 +205,16 @@ main {
 #all-projects .btn:hover::after {
   transform: scaleX(1);
 }
-#projects .more {
+#projects .more,
+#all-projects .more {
   font-family: "Bungee Hairline", cursive;
   color: white;
   font-size: 1.2em;
   position: relative;
   padding-bottom: 5px;
 }
-#projects .more::after {
+#projects .more::after,
+#all-projects .more::after {
   content: "";
   position: absolute;
   left: 0;
@@ -246,38 +226,45 @@ main {
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
-#projects .more:hover::after {
+#projects .more:hover::after,
+#all-projects .more:hover::after {
   transform: scaleX(0);
 }
 .project-wrap {
   padding-bottom: 3vh;
   text-align: center;
   transition: all 1s ease-in-out;
+  border-radius: 10px;
 }
 .tile {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
-.tile img {
-  border-radius: 5px;
+#projects .tile img {
+  border-radius: 10px;
   width: 90%;
+  height: 50vh;
   border: 1px solid rgba(36, 34, 34, 0.2);
 }
 .content {
   font-family: "Source Code Pro", monospace;
+  line-height: 1.5;
   font-weight: 200;
   color: white;
   opacity: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease-in-out;
   z-index: 1;
-  width: 400px;
+  max-width: 500px;
+  border-radius: 10px;
 }
 .content p {
   padding-bottom: 1em;
+  font-size: 1.1em;
 }
 .tile img {
   transition: all 1s ease;
@@ -289,25 +276,16 @@ main {
 .tile:hover .content {
   opacity: 1;
 }
-/* .content ul {
-  padding-top: 2em;
-  display: flex;
-  justify-content: center;
-}
-.content ul li {
-  margin: 0.2em;
-}
-.content ul li i {
-  font-size: 1.2em;
-  color: #85c1e9;
-} */
 .content ul li {
   border: 1px solid white;
   padding: 3px 10px;
   border-radius: 15px;
   display: inline-block;
+  margin: 3px;
 }
-
+.extra-links {
+  margin-bottom: 0.3em;
+}
 #contact-me {
   padding: 3vh 5% 5vh 5%;
   background: linear-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)),
@@ -418,8 +396,7 @@ form p {
 }
 #contact-footer h1 {
   color: white;
-  /* animation: beat 1.5s infinite linear; */
-  animation: blink 2s linear infinite;
+  /* animation: blink 2s linear infinite; */
   transition: text-shadow;
   cursor: default;
 }
@@ -441,19 +418,14 @@ form p {
   }
 }
 
-/* hamburger menu */
-/* @media (min-width:768px) and (max-width:1024px) {} */
-
 /* all projects page */
 #all-projects {
-  padding-top: 3vh;
-}
-.absolute {
-  position: absolute;
+  padding: 3vh 3% 10vh 3%;
 }
 #all-projects article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
 }
 #all-projects h1 {
   font-size: 3.5em;
@@ -469,33 +441,47 @@ form p {
   padding-bottom: 5vh;
 }
 .project-wrap {
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
   text-align: center;
 }
 #all-projects img {
-  border-radius: 5px;
-  width: 90%;
+  border-radius: 10px;
+  width: 100%;
+  height: 36vh;
+  object-fit: cover;
   border: 1px solid rgba(36, 34, 34, 0.2);
   transition: all 1s ease;
 }
 #all-projects .content {
   top: 50%;
 }
-/* #all-projects img:hover {
-  opacity: 0.5;
-} */
-#about-page {
-  color: white;
+#about-page .nav {
+  padding: 0;
+  margin: 0;
+  margin-top: -0.6em;
 }
-#about-page h1 {
+#about-page .logo {
+  padding: 0 2%;
+  margin: 0;
+  margin-top: -0.6em;
+}
+#about-page section {
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+#about-page section h1 {
   font-size: 25px;
   display: inline-block;
   position: relative;
   font-family: "Source Code Pro", monospace;
+  font-weight: 300;
   margin: 5px;
   letter-spacing: 2px;
 }
-#about-page h1:after {
+#about-page section h1:after {
   box-sizing: border-box;
   content: "";
   position: absolute;
@@ -504,11 +490,37 @@ form p {
   background: rgb(19, 19, 19) url(../img/base.png);
   animation: grain 0.5s linear infinite;
   -webkit-animation: grain 0.5s linear infinite;
-
   top: 0;
   right: 0;
-  border-left: 3px solid black;
-  animation: cursor 0.6s linear infinite, typing 2s steps(40) forwards 1;
+  border-left: 3px solid rgba(19, 19, 19, 0);
+  animation: cursor 3s linear, typing 3s steps(40) forwards 1;
+}
+#about-page section h1:nth-of-type(1):after {
+  animation: cursor 4s linear, typing 3s steps(40) forwards 1;
+}
+#about-page section h1:nth-of-type(2):after {
+  animation: cursor 4s linear, typing 2s steps(40) forwards 1;
+  animation-delay: 5s;
+}
+#about-page section h1:nth-of-type(3):after {
+  animation: cursor 4s linear, typing 3s steps(40) forwards 1;
+  animation-delay: 9s;
+}
+#about-page section h1:nth-of-type(4):after {
+  animation: cursor 4s linear, typing 3s steps(40) forwards 1;
+  animation-delay: 13s;
+}
+#about-page section h1:nth-of-type(5):after {
+  animation: cursor 4s linear, typing 3s steps(40) forwards 1;
+  animation-delay: 17s;
+}
+#about-page section h1:nth-of-type(6):after {
+  animation: cursor 4s linear infinite, typing 3s steps(40) forwards 1;
+  animation-delay: 21s;
+}
+.challenge-link {
+  color: #85c1e9;
+  font-weight: 600;
 }
 
 @keyframes cursor {
@@ -534,5 +546,352 @@ form p {
 @keyframes typing {
   to {
     width: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    width: 80%;
+  }
+  header ul li a {
+    font-size: 1.1em;
+  }
+  .logo img {
+    height: 3em;
+  }
+  .social-wrap {
+    top: 22vh;
+    right: 1%;
+  }
+  .social-wrap i {
+    font-size: 1em;
+  }
+  main {
+    height: auto;
+  }
+  #about h1 {
+    padding-top: 15vh;
+    font-size: 5em;
+  }
+  #about h2 {
+    margin-top: -2em;
+    font-size: 3em;
+  }
+  #about h3 {
+    font-size: 1em;
+    padding-bottom: 15vh;
+  }
+  .scroll-icon {
+    font-size: 1.5em;
+    animation-name: none;
+    margin-top: -4em;
+  }
+  #projects,
+  #all-projects {
+    padding: 3vh 3% 10vh 3%;
+  }
+  #projects h1 {
+    font-size: 2.5em;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+  }
+  #projects .tile img {
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border: 1px solid rgba(36, 34, 34, 0.2);
+  }
+  .content {
+    width: 300px;
+  }
+  .content p {
+    padding-bottom: 1em;
+    font-size: 0.9em;
+  }
+  #projects .more,
+  #all-projects .more {
+    font-size: 1em;
+  }
+  #projects .btn,
+  #all-projects .btn {
+    font-size: 0.9em;
+  }
+  .content ul li {
+    font-size: 0.9em;
+  }
+  #contact-footer h1 {
+    font-size: 1em;
+  }
+  #contact-footer i {
+    font-size: 1.1em;
+  }
+  #contact-footer h2 {
+    font-size: 0.9em;
+  }
+  #all-projects {
+    padding: 3vh 3% 10vh 3%;
+  }
+  #all-projects article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #all-projects h1 {
+    font-size: 2.5em;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+  }
+  .btn-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #about-page section h1 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    margin-bottom: 2vh;
+  }
+  #about-page section h1:after {
+    position: static;
+  }
+  #about-page section h1:nth-of-type(6):after,
+  #about-page section h1:nth-of-type(2):after {
+    position: absolute;
+  }
+  #about-page section h1:nth-of-type(1):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(2):after {
+    animation: cursor 1s linear infinite, typing 3s steps(40) forwards 1;
+    animation-delay: 1s;
+    border-left: 1px solid rgba(19, 19, 19, 0);
+  }
+  #about-page section h1:nth-of-type(3):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(4):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(5):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(6):after {
+    animation: cursor 1s linear infinite, typing 3s steps(40) forwards 1;
+    animation-delay: 9s;
+    border-left: 1px solid rgba(19, 19, 19, 0);
+  }
+  #about-page .social-wrap {
+    top: 70vh;
+    right: 1%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hamburger {
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background: url("../img/more-btn.png") center/80% no-repeat;
+  }
+  .showClose {
+    background: url("../img/x-btn.png") center/50% no-repeat;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+  }
+  .showNav {
+    transform: translateY(0);
+  }
+  .nav {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+  }
+  header button {
+    outline: none;
+    border: none;
+    display: block;
+  }
+  header ul li a {
+    font-size: 1.5em;
+    letter-spacing: 0px;
+  }
+  .logo img {
+    height: 2.5em;
+  }
+  .social-wrap {
+    top: 65vh;
+    right: 3%;
+  }
+  .social-wrap i {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  main {
+    height: 100vh;
+  }
+  #about h1 {
+    padding-top: 15vh;
+    font-size: 2.5em;
+  }
+  #about h2 {
+    margin-top: -1.5em;
+    font-size: 2em;
+  }
+  #about h3 {
+    font-size: 1em;
+    padding-bottom: 15vh;
+  }
+  .icon-wrap {
+    display: none;
+  }
+  #projects,
+  #all-projects {
+    padding: 3vh 1% 8vh 1%;
+    margin: 0 1em;
+  }
+
+  #projects article {
+    grid-template-columns: 1fr;
+  }
+  .project-wrap {
+    padding-bottom: 1em;
+  }
+  #projects h1 {
+    font-size: 2em;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+  }
+  #projects .tile img {
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border: 1px solid rgba(36, 34, 34, 0.2);
+  }
+  .content {
+    width: 300px;
+  }
+  .content p {
+    padding-bottom: 1em;
+    font-size: 0.9em;
+  }
+  #projects .more,
+  #all-projects .more {
+    font-size: 0.9em;
+    padding-bottom: 1px;
+  }
+  #projects .more::after,
+  #all-projects .more::after {
+    height: 0;
+  }
+  #projects .btn,
+  #all-projects .btn {
+    font-size: 0.9em;
+  }
+  #contact-footer {
+    padding: 1vh 3%;
+    grid-template-columns: 1fr;
+  }
+  #contact-footer div {
+    display: flex;
+    justify-content: center;
+  }
+  .content ul li {
+    font-size: 0.9em;
+  }
+  #contact-footer h1 {
+    font-size: 1em;
+  }
+  #contact-footer i {
+    font-size: 1em;
+    margin: 0 0.3em;
+  }
+  #contact-footer h2 {
+    font-size: 0.9em;
+    justify-self: center;
+    align-self: center;
+  }
+  #all-projects {
+    padding: 3vh 0 8vh 0;
+  }
+  #all-projects article {
+    grid-template-columns: 1fr;
+  }
+  #all-projects h1 {
+    font-size: 2em;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+  }
+  #all-projects img {
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .btn-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #about-page section h1 {
+    font-size: 11px;
+    letter-spacing: 0px;
+    margin-bottom: 2vh;
+  }
+  #about-page section h1:after {
+    position: static;
+  }
+  #about-page section h1:nth-of-type(6):after,
+  #about-page section h1:nth-of-type(2):after {
+    position: absolute;
+  }
+  #about-page section h1:nth-of-type(1):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(2):after {
+    animation: cursor 1s linear infinite, typing 3s steps(40) forwards 1;
+    animation-delay: 1s;
+    border-left: 1px solid rgba(19, 19, 19, 0);
+  }
+  #about-page section h1:nth-of-type(3):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(4):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(5):after {
+    animation: none;
+  }
+  #about-page section h1:nth-of-type(6):after {
+    animation: cursor 1s linear infinite, typing 3s steps(40) forwards 1;
+    animation-delay: 9s;
+    border-left: 1px solid rgba(19, 19, 19, 0);
+  }
+  #about-page .social-wrap {
+    position: static;
+    writing-mode: horizontal-tb;
+    display: flex;
+    justify-content: center;
+  }
+  #about-page .social-wrap i {
+    font-size: 0.9em;
   }
 }
