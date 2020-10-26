@@ -686,7 +686,7 @@ form p {
 
 @media (min-width: 320px) and (max-width: 767px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .hamburger {
     position: absolute;
