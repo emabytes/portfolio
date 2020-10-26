@@ -815,7 +815,7 @@ form p {
   }
   #projects .more,
   #all-projects .more {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   #projects .more::after,
   #all-projects .more::after {
@@ -850,8 +850,8 @@ form p {
     font-size: 1em;
   }
   #contact-footer i {
-    font-size: 1em;
-    margin: 0.5em 0.3em;
+    font-size: 1.2em;
+    margin: 0.5em 0.7em;
   }
   #contact-footer h2 {
     font-size: 0.9em;
@@ -921,6 +921,6 @@ form p {
     justify-content: center;
   }
   #about-page .social-wrap i {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
