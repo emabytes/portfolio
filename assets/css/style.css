@@ -687,6 +687,14 @@ form p {
   body {
     animation: none;
   }
+  .logo {
+    padding: 0em 3%;
+    position: absolute;
+    z-index: 9999;
+  }
+  .logo img {
+    height: 2.5em;
+  }
   .hamburger {
     position: absolute;
     z-index: 999;
@@ -736,14 +744,7 @@ form p {
     font-size: 1.5em;
     letter-spacing: 0px;
   }
-  .logo {
-    padding: 1em 3%;
-    position: absolute;
-    z-index: 9999;
-  }
-  .logo img {
-    height: 2.5em;
-  }
+
   .social-wrap {
     top: 60%;
     right: 1%;
