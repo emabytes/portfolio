@@ -687,6 +687,9 @@ form p {
   body {
     animation: none;
   }
+  header {
+    height: 10vh;
+  }
   .hamburger {
     position: absolute;
     z-index: 999;
@@ -753,13 +756,13 @@ form p {
     padding: 10px;
   }
   main {
-    height: 100vh;
+    height: 90vh;
     justify-content: flex-start;
   }
   #about {
     display: flex;
     flex-direction: column;
-    padding-top: 15em;
+    padding-top: 13em;
   }
   #about h1 {
     padding: 0em;
@@ -782,7 +785,6 @@ form p {
     padding: 2em 1% 3em 1%;
     margin: 0 1em;
   }
-
   #projects article {
     grid-template-columns: 1fr;
   }
@@ -812,6 +814,7 @@ form p {
   #all-projects .more {
     font-size: 0.9em;
     padding-bottom: 1px;
+    padding: 1em 0;
   }
   #projects .more::after,
   #all-projects .more::after {
