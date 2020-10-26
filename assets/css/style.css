@@ -751,13 +751,13 @@ form p {
     padding: 10px;
   }
   main {
-    height: 100vh;
+    height: 90vh;
     justify-content: flex-start;
   }
   #about {
     display: flex;
     flex-direction: column;
-    padding-top: 8em;
+    padding-top: 15em;
   }
   #about h1 {
     padding: 0em;
