@@ -56,7 +56,7 @@ header ul li a:hover {
   z-index: 999;
 }
 .logo img {
-  height: 4em;
+  height: 4.5em;
 }
 .social-wrap {
   position: absolute;
@@ -700,12 +700,13 @@ form p {
   }
   .logo img {
     height: 2.5em;
+    position: fixed;
   }
   .hamburger {
-    position: absolute;
+    position: fixed;
     z-index: 999;
     top: 3%;
-    right: 5%;
+    right: 3%;
     width: 36px;
     height: 36px;
     border: none;
@@ -788,6 +789,7 @@ form p {
   }
   #projects article {
     grid-template-columns: 1fr;
+    padding-bottom: 1.5em;
   }
   .project-wrap {
     padding-bottom: 1em;
@@ -814,16 +816,23 @@ form p {
   #projects .more,
   #all-projects .more {
     font-size: 0.9em;
-    padding-bottom: 1px;
-    padding: 1em 0;
   }
   #projects .more::after,
   #all-projects .more::after {
     height: 0;
   }
+  #projects .btn:hover::after,
+  #all-projects .btn:hover::after {
+    transform: none;
+  }
+  #projects .btn:visited::after,
+  #all-projects .btn:visited::after {
+    transform: scaleX(1);
+  }
   #projects .btn,
   #all-projects .btn {
     font-size: 0.9em;
+    padding: 0.5em 0 0.1em 0;
   }
   #contact-footer {
     padding: 1em 3%;
@@ -854,6 +863,7 @@ form p {
   }
   #all-projects article {
     grid-template-columns: 1fr;
+    padding-bottom: 1.5em;
   }
   #all-projects h1 {
     font-size: 2em;
