@@ -32,7 +32,6 @@ body {
   width: 50%;
   position: absolute;
   right: 0;
-  height: 10vh;
 }
 header button {
   display: none;
@@ -685,6 +684,9 @@ form p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  body {
+    animation: none;
+  }
   .hamburger {
     position: absolute;
     z-index: 999;
@@ -751,7 +753,7 @@ form p {
     padding: 10px;
   }
   main {
-    height: 90vh;
+    height: 100vh;
     justify-content: flex-start;
   }
   #about {
