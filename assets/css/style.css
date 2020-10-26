@@ -835,7 +835,7 @@ form p {
     padding: 0.5em 0 0.1em 0;
   }
   #contact-footer {
-    padding: 1em 3%;
+    padding: 3em 3%;
     grid-template-columns: 1fr;
   }
   #contact-footer div {
