@@ -691,8 +691,8 @@ form p {
   .hamburger {
     position: absolute;
     z-index: 999;
-    top: 20px;
-    right: 20px;
+    top: 3%;
+    right: 5%;
     width: 36px;
     height: 36px;
     border: none;
@@ -726,7 +726,7 @@ form p {
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    height: 100vh;
+    height: 90vh;
   }
   header button {
     outline: none;
@@ -741,8 +741,8 @@ form p {
     height: 2.5em;
   }
   .social-wrap {
-    top: 65vh;
-    right: 3%;
+    top: 60%;
+    right: 1%;
   }
   .social-wrap i {
     font-size: 0.9em;
@@ -768,7 +768,7 @@ form p {
   }
   #projects,
   #all-projects {
-    padding: 3vh 1% 8vh 1%;
+    padding: 2em 1% 3em 1%;
     margin: 0 1em;
   }
 
