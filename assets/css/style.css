@@ -685,9 +685,6 @@ form p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
   .hamburger {
     position: absolute;
     z-index: 999;
@@ -711,7 +708,7 @@ form p {
     height: 100vh;
     overflow: hidden;
     color: white;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 99;
   }
@@ -751,12 +748,16 @@ form p {
   main {
     height: 100vh;
   }
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
   #about h1 {
     padding-top: 0em;
     font-size: 2.5em;
   }
   #about h2 {
-    margin-top: -1.5em;
+    margin-top: 0em;
     font-size: 2em;
   }
   #about h3 {
@@ -811,7 +812,7 @@ form p {
     font-size: 0.9em;
   }
   #contact-footer {
-    padding: 0.5em 3%;
+    padding: 1em 3%;
     grid-template-columns: 1fr;
   }
   #contact-footer div {
@@ -827,7 +828,7 @@ form p {
   }
   #contact-footer i {
     font-size: 1em;
-    margin: 0 0.3em;
+    margin: 0.5em 0.3em;
   }
   #contact-footer h2 {
     font-size: 0.9em;
