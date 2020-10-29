@@ -51,7 +51,7 @@ header ul li a:hover {
     0 0 10px #0073e6, 0 0 12px #0073e6, 0 0 14px #0073e6;
 }
 .logo {
-  padding: 1em 2%;
+  padding: 1.5em 2%;
   position: fixed;
   z-index: 999;
 }
@@ -285,7 +285,7 @@ main {
 .extra-links {
   margin-bottom: 0.3em;
 }
-#contact-footer {
+#contact {
   padding: 6vh 3%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -293,31 +293,31 @@ main {
     url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
       center/cover no-repeat;
 }
-#contact-footer h1 {
+#contact h1 {
   font-size: 1.5em;
   align-self: center;
   cursor: default;
 }
-#contact-footer div {
+#contact div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#contact-footer i {
+#contact i {
   color: #85c1e9;
   font-size: 1.5em;
   transition: all 0.5s;
 }
-#contact-footer i:hover {
+#contact i:hover {
   transform: scale(1.3);
 }
-#contact-footer h1 {
+#contact h1 {
   color: white;
   /* animation: blink 2s linear infinite; */
   transition: text-shadow;
   cursor: default;
 }
-#contact-footer h2 {
+#contact h2 {
   font-size: 1em;
   font-weight: 400;
   justify-self: end;
@@ -380,7 +380,7 @@ main {
 #about-page .logo {
   padding: 0 2%;
   margin: 0;
-  margin-top: -1.5em;
+  margin-top: -1em;
 }
 #about-page section {
   color: white;
@@ -537,13 +537,13 @@ main {
   .content ul li {
     font-size: 0.9em;
   }
-  #contact-footer h1 {
+  #contact h1 {
     font-size: 1em;
   }
-  #contact-footer i {
+  #contact i {
     font-size: 1.1em;
   }
-  #contact-footer h2 {
+  #contact h2 {
     font-size: 0.9em;
   }
   #all-projects {
@@ -651,16 +651,20 @@ main {
     transform: translateY(0);
   }
   .nav {
+    background: black;
     position: static;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
   }
+  .nav li {
+    padding-bottom: 3em;
+  } 
   header button {
     outline: none;
     border: none;
@@ -671,7 +675,7 @@ main {
     letter-spacing: 0px;
   }
   .social-wrap {
-    top: 60%;
+    top: 50%;
     right: 1%;
   }
   .social-wrap i {
@@ -752,11 +756,11 @@ main {
     font-size: 0.9em;
     padding: 0.5em 0 0.1em 0;
   }
-  #contact-footer {
+  #contact {
     padding: 3em 3%;
     grid-template-columns: 1fr;
   }
-  #contact-footer div {
+  #contact div {
     display: flex;
     justify-content: center;
     padding-bottom: 0.3em;
@@ -764,14 +768,14 @@ main {
   .content ul li {
     font-size: 0.9em;
   }
-  #contact-footer h1 {
+  #contact h1 {
     font-size: 1em;
   }
-  #contact-footer i {
+  #contact i {
     font-size: 1.2em;
     margin: 0.5em 0.7em;
   }
-  #contact-footer h2 {
+  #contact h2 {
     font-size: 0.9em;
     justify-self: center;
     align-self: center;
@@ -833,10 +837,15 @@ main {
     border-left: 1px solid rgba(19, 19, 19, 0);
   }
   #about-page .social-wrap {
-    position: static;
+
     writing-mode: horizontal-tb;
     display: flex;
     justify-content: center;
+    top: 93%;
+    right: 5%;
+  }
+  #about-page .social-wrap{
+    margin-bottom: -5em;
   }
   #about-page .social-wrap i {
     font-size: 1em;
