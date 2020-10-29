@@ -87,9 +87,11 @@ li {
 }
 main {
   height: 100vh;
-  background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
+  /* background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
     url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
-      center/cover no-repeat;
+      center/cover no-repeat; */
+  background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
+    url(../img/background.jpg) center/cover no-repeat;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -290,8 +292,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
-    url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
-      center/cover no-repeat;
+    url(../img/background.jpg) center/cover no-repeat;
 }
 #contact h1 {
   font-size: 1.5em;
@@ -664,7 +665,7 @@ main {
   }
   .nav li {
     padding-bottom: 3em;
-  } 
+  }
   header button {
     outline: none;
     border: none;
@@ -837,14 +838,13 @@ main {
     border-left: 1px solid rgba(19, 19, 19, 0);
   }
   #about-page .social-wrap {
-
     writing-mode: horizontal-tb;
     display: flex;
     justify-content: center;
     top: 93%;
     right: 5%;
   }
-  #about-page .social-wrap{
+  #about-page .social-wrap {
     margin-bottom: -5em;
   }
   #about-page .social-wrap i {
