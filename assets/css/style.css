@@ -613,7 +613,7 @@ main {
     background-color: #85c1e9;
   }
   .logo {
-    padding: 0.7em 3%;
+    padding: 1.5em 3%;
     position: absolute;
     z-index: 9999;
   }
@@ -624,7 +624,7 @@ main {
   .hamburger {
     position: fixed;
     z-index: 999;
-    top: 3%;
+    top: 1.5em;
     right: 3%;
     width: 36px;
     height: 36px;
@@ -686,7 +686,7 @@ main {
   #about {
     display: flex;
     flex-direction: column;
-    padding-top: 13em;
+    padding-top: 10em;
   }
   #about h1 {
     padding: 0em;
