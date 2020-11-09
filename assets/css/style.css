@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600;700&display=swap");
@@ -12,7 +11,6 @@ html {
 }
 body {
   font-family: "Bungee Hairline", cursive;
-  background: whitesmoke;
   background: rgb(19, 19, 19) url(../img/base.png);
   animation: grain 0.5s linear infinite;
   -webkit-animation: grain 0.5s linear infinite;
@@ -87,9 +85,6 @@ li {
 }
 main {
   height: 100vh;
-  /* background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
-    url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
-      center/cover no-repeat; */
   background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.8)),
     url(../img/background.jpg) center/cover no-repeat;
   text-align: center;
@@ -116,8 +111,6 @@ main {
 .neon {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-  /* animation: blink 2s linear infinite;
-  transition: text-shadow; */
 }
 @keyframes blink {
   50% {
@@ -335,8 +328,6 @@ main {
     transform: scale(0.95);
   }
 }
-
-/* all projects page */
 #all-projects {
   padding: 3vh 3% 10vh 3%;
 }
