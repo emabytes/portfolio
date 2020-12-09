@@ -364,16 +364,6 @@ main {
 #all-projects .content {
   top: 50%;
 }
-#about-page .nav {
-  padding: 0;
-  margin: 0;
-  margin-top: -0.6em;
-}
-#about-page .logo {
-  padding: 0 2%;
-  margin: 0;
-  margin-top: -1em;
-}
 #about-page section {
   color: white;
   height: 90vh;
