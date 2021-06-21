@@ -459,7 +459,7 @@ main {
     height: 3em;
   }
   .social-wrap {
-    top: 22vh;
+    top: 14vh;
     right: 1%;
   }
   .social-wrap i {
@@ -657,12 +657,12 @@ main {
     letter-spacing: 0px;
   }
   .social-wrap {
-    top: 50%;
+    top: 40%;
     right: 1%;
   }
   .social-wrap i {
     font-size: 0.9em;
-    padding: 10px;
+    padding: 12px;
   }
   #about {
     display: flex;
